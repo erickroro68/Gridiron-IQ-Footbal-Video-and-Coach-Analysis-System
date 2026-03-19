@@ -1,9 +1,16 @@
 🏈 GridironIQ — AI Football Film Intelligence
+
+
+
+
 📌 Overview
+============================
 
-GridironIQ is an AI-powered football film analysis system designed to automate what coaching staffs traditionally do manually.
+ -  GridironIQ is an AI-powered football film analysis system designed to automate what     coaching staffs traditionally do manually.
 
-It processes raw game film, detects and tracks all 22 players, analyzes formations and tendencies, and generates data-driven insights to support game planning.
+ - It processes raw game film, detects and tracks all 22 players, analyzes formations and tendencies, and generates data-driven insights to support game planning.
+
+   
 
 Built for:
 
@@ -13,46 +20,67 @@ College (D3–D1)
 
 Advanced scouting workflows
 
+
+
+
 ⚡ What GridironIQ Does
+============================
 
-Detects players using YOLOv8 + Soft-NMS
+- Detects players using YOLOv8 + Soft-NMS
 
-Tracks players across frames (ByteTrack – upcoming)
+-Tracks players across frames (ByteTrack – upcoming)
 
-Classifies formations (offense & defense)
+-Classifies formations (offense & defense)
 
-Computes opponent tendencies
+-Computes opponent tendencies
 
-Simulates plays using probabilistic models
+-Simulates plays using probabilistic models
 
-Generates automated scouting reports
+-Generates automated scouting reports
 
-Builds toward real-time sideline analysis
+-Builds toward real-time sideline analysis
+
+
+
 
 🧠 Why It’s Different
+============================
 
-Unlike tools like Hudl (manual tagging), GridironIQ:
 
-Automates entire film breakdown
+-Unlike tools like Hudl (manual tagging), GridironIQ:
 
-Runs 1000+ simulations per play
+-Automates entire film breakdown
 
-Flags hidden tendencies coaches miss
+-Runs 1000+ simulations per play
 
-Bridges film → analytics → decision-making
+-Flags hidden tendencies coaches miss
+
+-Bridges film → analytics → decision-making
+
+
+
 
 🏗️ System Architecture (Phases)
+
+
+
 ✅ Completed
 
-Phase 1: Environment setup
+-Phase 1: Environment setup
 
-Phase 2: Video ingestion
+-Phase 2: Video ingestion
 
-Phase 3: Frame upscaling
+-Phase 3: Frame upscaling
 
-Phase 4 (Partial): Player detection + Soft-NMS
+-Phase 4 (Partial): Player detection + Soft-NMS
+
+
+
 
 🚧 In Progress
+
+
+
 
 Field validation (field_checker)
 
@@ -60,7 +88,13 @@ Perspective correction
 
 Bounding box scoring
 
+
+
+
 🔜 Upcoming
+
+
+
 
 Phase 5: Player tracking (ByteTrack)
 
@@ -72,8 +106,11 @@ Phase 8: Formation recognition
 
 Phase 9+: AI analytics + simulation engine
 
+
+
+
 🧱 Tech Stack
-Core
+============================
 
 Python 3.10+
 
@@ -101,7 +138,13 @@ OCR (Pytesseract)
 
 Homography (OpenCV)
 
+
+
+
 ⚙️ Installation
+============================
+
+
 1. Create Virtual Environment
 python -m venv .venv
 Activate:
@@ -113,11 +156,18 @@ Windows:
 Mac/Linux:
 
 source .venv/bin/activate
+
 2. Install Core Dependencies
+
 pip install -r requirements.txt
-3. Install PyTorch (IMPORTANT)
+
+5. Install PyTorch (IMPORTANT)
+
+
 
 ⚠️ PyTorch depends on your GPU
+============================
+
 
 CPU:
 pip install torch torchvision
@@ -160,12 +210,22 @@ matplotlib
 🧪 Minimal Test
 python -c "import numpy, cv2, ultralytics; print('OK')"
 
+============================
+
+
 YOLO test:
+============================
 
 from ultralytics import YOLO
+
 model = YOLO("yolov8n.pt")
+
 model.predict("test.jpg")
+
+
+
 🔁 Reproducibility Checklist
+============================
 
 Use Python 3.10–3.12
 
@@ -177,16 +237,31 @@ Match CUDA ↔ PyTorch versions
 
 Document external installs (Tesseract, models)
 
+
+
+
 🤖 Tracking Algorithms Comparison
+============================
+
 Tracker	Strength	Weakness
+
 ByteTrack	Fast, handles occlusion	No appearance tracking
+
 BoT-SORT	Most accurate	Slower
+
 DeepSORT	Simple	Outdated
 
+
 👉 Default: ByteTrack
+
 👉 Advanced: BoT-SORT
 
+
+
+
 🚀 Future Research Directions
+============================
+
 
 Field line detection (hash marks + yard lines)
 
@@ -200,7 +275,12 @@ Weather-aware model tuning
 
 Real-time sideline deployment
 
+
+
+
 🎯 Vision
+
+============================
 
 GridironIQ aims to become:
 
