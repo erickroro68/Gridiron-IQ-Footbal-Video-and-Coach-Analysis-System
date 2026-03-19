@@ -1,7 +1,3 @@
-✅ Here’s your FINAL COMBINED README (READY FOR GITHUB)
-
-You can copy-paste this directly 👇
-
 🏈 GridironIQ — AI Football Film Intelligence
 📌 Overview
 
