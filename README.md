@@ -7,19 +7,22 @@
 📌 Overview
 ============================
 
- -  GridironIQ is an AI-powered football film analysis system designed to automate what     coaching staffs traditionally do manually.
+ -  GridironIQ is an AI-driven football film analysis system designed to help coaches spend less time fighting the film and more time coaching the game. Built with Python, YOLOv8, and ByteTrack, it detects formations, tracks players, analyzes tendencies, and simulates plays through a multi-phase pipeline that turns raw film into data-driven insight. The goal is simple: help coaches break down opponents faster, catch details that are easy to miss, self-scout more honestly, and give smaller staffs access to a level of football intelligence that usually takes far more time, money, and manpower.
 
- - It processes raw game film, detects and tracks all 22 players, analyzes formations and tendencies, and generates data-driven insights to support game planning.
+     -Designed with a modular, multi‑phase architecture,             making it easy to extend with new models, add custom           team‑specific logic, and integrate future features             like real‑time sideline analysis or automated scouting         reports.
 
-   
+     -Transforms raw game film into structured, searchable           data, giving coaches instant access to formations,             tendencies, and player behavior without hours of               manual tagging.
 
-Built for:
+     -Built for real football environments, from high‑school         programs with small staffs to college teams looking for        an edge, delivering analytics that normally require           expensive systems and large analyst crews
 
-High school programs
 
-College (D3–D1)
+     **Built for:**
 
-Advanced scouting workflows
+     - High school programs
+
+     - College (D3–D1)
+
+     - Advanced scouting workflows
 
 
 
