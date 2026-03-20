@@ -2,12 +2,31 @@
 .vs/
 *.slnx
 
-# Python
+# Python cache
 __pycache__/
-*.pyc
-venv/
+*.py[codz]
+*.pyo
+*.pyd
 
-# Data (videos too big for git)
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Large data (IMPORTANT for your project)
 data/film/*.mp4
 data/clips/*.mp4
 
