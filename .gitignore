@@ -1,0 +1,16 @@
+# Visual Studio
+.vs/
+*.slnx
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Data (videos too big for git)
+data/film/*.mp4
+data/clips/*.mp4
+
+# OS junk
+.DS_Store
+Thumbs.db
